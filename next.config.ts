@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
+const isExport = process.env.NEXT_EXPORT === "true";
+
 const nextConfig: NextConfig = {
+  output: isExport ? "export" : undefined,
   images: {
+    // Static export requires unoptimized images
+    unoptimized: isExport ? true : false,
     remotePatterns: [
       {
         protocol: "https",
@@ -9,15 +14,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Proxy /api/* calls to the Python FastAPI backend
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: `${process.env.BACKEND_URL ?? "http://localhost:8000"}/:path*`,
-      },
-    ];
-  },
+  // Proxy /api/* calls to the Python FastAPI backend (dev/prod only)
+  ...(isExport
+    ? {}
+    : {
+        async rewrites() {
+          return [
+            {
+              source: "/api/:path*",
+              destination: `${process.env.BACKEND_URL ?? "http://localhost:8000"}/:path*`,
+            },
+          ];
+        },
+      }),
 };
 
 export default nextConfig;
