@@ -33,7 +33,7 @@ jobs:
         run: npm ci
 
       - name: Build static export
-        run: NEXT_EXPORT=true npm run build
+        run: NEXT_EXPORT=true NEXT_BASE_PATH=/testsocial npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
