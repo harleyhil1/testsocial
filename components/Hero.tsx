@@ -15,27 +15,27 @@ export default function Hero() {
           sizes="100vw"
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1e3d2f]/80 via-[#1e3d2f]/60 to-[#2a2015]/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#00205b]/80 via-[#00205b]/60 to-[#001540]/85" />
         {/* Subtle texture */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,146,42,0.15),_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,160,80,0.15),_transparent_60%)]" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10 text-center pt-24">
         {/* Eyebrow */}
         <div className="inline-flex items-center gap-3 mb-8">
-          <div className="h-px w-12 bg-[#e8c87a]/60" />
-          <span className="text-[#e8c87a] text-xs font-medium uppercase tracking-[0.3em]">
+          <div className="h-px w-12 bg-[#e8c878]/60" />
+          <span className="text-[#e8c878] text-xs font-medium uppercase tracking-[0.3em]">
             Paradise Valley, Arizona
           </span>
-          <div className="h-px w-12 bg-[#e8c87a]/60" />
+          <div className="h-px w-12 bg-[#e8c878]/60" />
         </div>
 
         {/* Main Headline */}
         <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-light text-white leading-[1.05] mb-6 text-balance">
           Where Curiosity Leads.
           <br />
-          <em className="text-[#e8c87a]">Excellence Follows.</em>
+          <em className="text-[#e8c878]">Excellence Follows.</em>
         </h1>
 
         {/* Subtext */}
@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#e8c87a] text-[#2a2015] font-semibold px-8 py-4 rounded-full hover:bg-[#f5e4b8] transition-all text-base tracking-wide shadow-lg shadow-black/20"
+            className="inline-flex items-center gap-2 bg-[#e8c878] text-[#00205b] font-semibold px-8 py-4 rounded-full hover:bg-[#f5e4b8] transition-all text-base tracking-wide shadow-lg shadow-black/20"
           >
             Schedule a Tour
             <svg

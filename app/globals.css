@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
-  --color-clay: #8b3a2a;
-  --color-clay-light: #c4622d;
-  --color-clay-pale: #f0ddd6;
-  --color-gold: #c8922a;
-  --color-gold-light: #e8c87a;
-  --color-gold-pale: #f7efd8;
-  --color-forest: #1e3d2f;
-  --color-forest-light: #2d5a45;
-  --color-forest-pale: #d4e6dc;
-  --color-sage: #6b8f71;
-  --color-sage-light: #9ab89e;
-  --color-cream: #faf6ef;
-  --color-sand: #ede0cb;
-  --color-sand-dark: #d4c4a8;
-  --color-charcoal: #2a2015;
-  --color-charcoal-light: #4a3f30;
-  --color-warm-white: #fefcf8;
+  /* Brand Colors — AZMA Academy (navy + gold) */
+  --color-navy: #00205b;
+  --color-navy-light: #003087;
+  --color-navy-dark: #001540;
+  --color-navy-pale: #dce4f2;
 
-  /* Typography — reference Google Font names loaded via <link> in layout.tsx */
+  --color-gold: #c8a050;
+  --color-gold-light: #e8c878;
+  --color-gold-pale: #f7f0dc;
+
+  --color-charcoal: #1a1a2e;
+  --color-charcoal-light: #3a3a52;
+  --color-warm-gray: #6b6b7b;
+
+  --color-cream: #fafaf8;
+  --color-sand: #f0ece4;
+  --color-sand-dark: #ddd8ce;
+
+  --color-sage: #5a7a62;
+  --color-sage-pale: #d8e8dc;
+
+  /* Typography */
   --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
 }
@@ -35,8 +37,8 @@
   }
 
   body {
-    background-color: #faf6ef;
-    color: #2a2015;
+    background-color: #fafaf8;
+    color: #1a1a2e;
     font-family: "DM Sans", system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

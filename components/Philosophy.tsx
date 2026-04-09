@@ -43,16 +43,16 @@ const pillars = [
 
 export default function Philosophy() {
   return (
-    <section className="section-padding bg-[#1e3d2f]">
+    <section className="section-padding bg-[#00205b]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-[#e8c87a]/60" />
-            <span className="text-[#e8c87a] text-xs font-medium uppercase tracking-[0.25em]">
+            <div className="h-px w-8 bg-[#e8c878]/60" />
+            <span className="text-[#e8c878] text-xs font-medium uppercase tracking-[0.25em]">
               The Montessori Difference
             </span>
-            <div className="h-px w-8 bg-[#e8c87a]/60" />
+            <div className="h-px w-8 bg-[#e8c878]/60" />
           </div>
           <h2 className="font-display text-5xl md:text-6xl font-light text-white leading-tight text-balance">
             An education built on timeless principles
@@ -64,9 +64,9 @@ export default function Philosophy() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="group text-center p-8 rounded-2xl border border-white/10 hover:border-[#e8c87a]/30 hover:bg-white/5 transition-all"
+              className="group text-center p-8 rounded-2xl border border-white/10 hover:border-[#e8c878]/30 hover:bg-white/5 transition-all"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e8c87a]/10 text-[#e8c87a] mb-6 group-hover:bg-[#e8c87a]/20 transition-colors">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e8c878]/10 text-[#e8c878] mb-6 group-hover:bg-[#e8c878]/20 transition-colors">
                 {pillar.icon}
               </div>
               <h3 className="font-display text-2xl font-semibold text-white mb-3">

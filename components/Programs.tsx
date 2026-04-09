@@ -15,27 +15,27 @@ const programs = [
     title: "Primary",
     description:
       "Children develop concentration, fine motor skills, early literacy, and mathematical thinking using classic Montessori materials in a prepared environment.",
-    color: "bg-[#d4e6dc]",
-    accent: "text-[#1e3d2f]",
-    dot: "bg-[#1e3d2f]",
+    color: "bg-[#dce4f2]",
+    accent: "text-[#00205b]",
+    dot: "bg-[#00205b]",
   },
   {
     age: "6 – 9 yr",
     title: "Lower Elementary",
     description:
       "Collaborative and inquiry-driven, students dive into mathematics, science, history, and language arts through integrated, hands-on curriculum.",
-    color: "bg-[#f7efd8]",
-    accent: "text-[#c8922a]",
-    dot: "bg-[#c8922a]",
+    color: "bg-[#f7f0dc]",
+    accent: "text-[#c8a050]",
+    dot: "bg-[#c8a050]",
   },
   {
     age: "9 – 12 yr",
     title: "Upper Elementary",
     description:
       "Students take greater ownership of their education, pursuing deep research projects, community service, and advanced academic skills.",
-    color: "bg-[#d4e6dc]",
-    accent: "text-[#1e3d2f]",
-    dot: "bg-[#1e3d2f]",
+    color: "bg-[#dce4f2]",
+    accent: "text-[#00205b]",
+    dot: "bg-[#00205b]",
   },
   {
     age: "12 – 15 yr",
@@ -50,17 +50,17 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section className="section-padding bg-[#ede0cb]/40">
+    <section className="section-padding bg-[#f4f6fa]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <div className="max-w-2xl mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-[#c8922a]" />
-            <span className="text-[#c8922a] text-xs font-medium uppercase tracking-[0.25em]">
+            <div className="h-px w-8 bg-[#c8a050]" />
+            <span className="text-[#c8a050] text-xs font-medium uppercase tracking-[0.25em]">
               Programs
             </span>
           </div>
-          <h2 className="font-display text-5xl md:text-6xl font-light text-[#1e3d2f] leading-tight text-balance">
+          <h2 className="font-display text-5xl md:text-6xl font-light text-[#00205b] leading-tight text-balance">
             A path for every stage of childhood
           </h2>
           <p className="mt-5 text-[#4a3f30] text-lg font-light leading-relaxed">
@@ -85,7 +85,7 @@ export default function Programs() {
         <div className="text-center mt-14">
           <Link
             href="/programs"
-            className="inline-flex items-center gap-2 border-2 border-[#1e3d2f] text-[#1e3d2f] font-semibold px-8 py-3.5 rounded-full hover:bg-[#1e3d2f] hover:text-white transition-all text-sm tracking-wide"
+            className="inline-flex items-center gap-2 border-2 border-[#00205b] text-[#00205b] font-semibold px-8 py-3.5 rounded-full hover:bg-[#00205b] hover:text-white transition-all text-sm tracking-wide"
           >
             View All Programs
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -107,7 +107,7 @@ function ProgramCard({
     <div className={`${program.color} rounded-2xl p-8 group hover:shadow-lg transition-all`}>
       <div className="flex items-center gap-3 mb-5">
         <div className={`w-2 h-2 rounded-full ${program.dot}`} />
-        <span className="text-xs font-medium text-[#6b8f71] uppercase tracking-[0.2em]">
+        <span className="text-xs font-medium text-[#5a7090] uppercase tracking-[0.2em]">
           {program.age}
         </span>
       </div>
