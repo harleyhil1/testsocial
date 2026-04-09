@@ -17,7 +17,8 @@ const programs = [
     age: "18 months – 3 years",
     title: "Toddler",
     tagline: "A gentle first step toward independence.",
-    image: "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80",
+    // Children doing practical life activities — pouring, sorting, sensory play
+    image: "https://images.unsplash.com/photo-1545987796-200677ee1011?w=800&q=80",
     color: "bg-[#f0ddd6]",
     accent: "#8b3a2a",
     description:
@@ -34,14 +35,15 @@ const programs = [
     age: "3 – 6 years",
     title: "Primary",
     tagline: "Where curiosity finds its first great tools.",
-    image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=800&q=80",
-    color: "bg-[#d4e6dc]",
-    accent: "#1e3d2f",
+    // Child working with Montessori materials on floor/low table
+    image: "https://images.unsplash.com/photo-1560785496-3c9d27877182?w=800&q=80",
+    color: "bg-[#dce4f2]",
+    accent: "#00205b",
     description:
       "The Primary years are a sensitive period for absorbing language, mathematics, and social norms. Children ages 3 to 6 work with classic Montessori materials — golden beads, sandpaper letters, bead chains — developing concentration, fine motor skills, and a foundation for all future learning.",
     highlights: [
       "Montessori materials for mathematics and literacy",
-      "Mixed-age 3-6 community",
+      "Mixed-age 3–6 community",
       "Grace and courtesy lessons",
       "Science, art, music, and cultural exploration",
     ],
@@ -51,9 +53,10 @@ const programs = [
     age: "6 – 9 years",
     title: "Lower Elementary",
     tagline: "Big questions, collaborative minds.",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
-    color: "bg-[#f7efd8]",
-    accent: "#c8922a",
+    // Children doing science experiment / hands-on group work
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&q=80",
+    color: "bg-[#f7f0dc]",
+    accent: "#c8a050",
     description:
       "The elementary years awaken a child's passion for understanding the world. In Lower Elementary, students ages 6 to 9 explore mathematics, language arts, history, science, and geography through integrated, story-driven curriculum — the Great Lessons — that makes learning feel epic.",
     highlights: [
@@ -68,9 +71,10 @@ const programs = [
     age: "9 – 12 years",
     title: "Upper Elementary",
     tagline: "Ownership, depth, and real contribution.",
-    image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
-    color: "bg-[#d4e6dc]",
-    accent: "#1e3d2f",
+    // Older children working on a group project / building something
+    image: "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?w=800&q=80",
+    color: "bg-[#dce4f2]",
+    accent: "#00205b",
     description:
       "Upper Elementary students ages 9 to 12 take increasing ownership of their education. They pursue extended research, community service projects, and advanced work in all academic areas. Peer collaboration and accountability build the leadership skills they'll carry for life.",
     highlights: [
@@ -85,7 +89,8 @@ const programs = [
     age: "12 – 15 years",
     title: "Middle School",
     tagline: "Purpose, identity, and readiness for the world.",
-    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80",
+    // Teens working on a hands-on project together
+    image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80",
     color: "bg-[#f0ddd6]",
     accent: "#8b3a2a",
     description:
@@ -105,12 +110,12 @@ export default function ProgramsPage() {
       <Navigation />
 
       {/* Page Hero */}
-      <section className="relative pt-40 pb-20 bg-[#1e3d2f] overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,146,42,0.15),_transparent_60%)]" />
+      <section className="relative pt-40 pb-20 bg-[#00205b] overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,160,80,0.15),_transparent_60%)]" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
           <div className="inline-flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-[#e8c87a]/60" />
-            <span className="text-[#e8c87a] text-xs font-medium uppercase tracking-[0.25em]">
+            <div className="h-px w-8 bg-[#e8c878]/60" />
+            <span className="text-[#e8c878] text-xs font-medium uppercase tracking-[0.25em]">
               Programs
             </span>
           </div>
@@ -125,16 +130,16 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      <main className="bg-[#faf6ef]">
+      <main className="bg-[#fafaf8]">
         {/* Program Anchors */}
-        <div className="border-b border-[#ede0cb] sticky top-20 z-30 bg-[#faf6ef]/95 backdrop-blur-sm">
+        <div className="border-b border-[#dce4f2] sticky top-20 z-30 bg-[#fafaf8]/95 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="flex gap-6 overflow-x-auto py-4 text-sm font-medium">
               {programs.map((p) => (
                 <a
                   key={p.id}
                   href={`#${p.id}`}
-                  className="text-[#4a3f30] hover:text-[#1e3d2f] whitespace-nowrap transition-colors"
+                  className="text-[#4a3f30] hover:text-[#00205b] whitespace-nowrap transition-colors"
                 >
                   {p.title}
                 </a>
@@ -148,7 +153,7 @@ export default function ProgramsPage() {
           <section
             key={program.id}
             id={program.id}
-            className={`section-padding ${i % 2 === 1 ? "bg-[#ede0cb]/30" : "bg-[#faf6ef]"}`}
+            className={`section-padding ${i % 2 === 1 ? "bg-[#f4f6fa]" : "bg-[#fafaf8]"}`}
           >
             <div className="max-w-7xl mx-auto px-6 lg:px-10">
               <div className={`grid lg:grid-cols-2 gap-16 items-center ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}>
@@ -157,7 +162,7 @@ export default function ProgramsPage() {
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl shadow-black/10">
                     <Image
                       src={program.image}
-                      alt={`${program.title} program`}
+                      alt={`${program.title} program — hands-on learning`}
                       fill
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -182,7 +187,7 @@ export default function ProgramsPage() {
                   <h2 className="font-display text-5xl font-light leading-tight mb-3" style={{ color: program.accent }}>
                     {program.title}
                   </h2>
-                  <p className="font-display text-2xl text-[#6b8f71] italic mb-6">{program.tagline}</p>
+                  <p className="font-display text-2xl text-[#5a7090] italic mb-6">{program.tagline}</p>
                   <p className="text-[#4a3f30] leading-relaxed text-lg font-light mb-8">
                     {program.description}
                   </p>

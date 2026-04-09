@@ -7,8 +7,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1920&q=85"
-          alt="Children learning in a Montessori classroom"
+          src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=1920&q=85"
+          alt="Children engaged in hands-on Montessori learning"
           fill
           className="object-cover object-center"
           priority

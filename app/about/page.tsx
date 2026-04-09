@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import TourCTA from "@/components/TourCTA";
 import Image from "next/image";
+import Logo from "@/components/Logo";
 
 export const metadata: Metadata = {
   title: "About | Montessori Academy Paradise Valley",
@@ -49,20 +50,18 @@ export default function AboutPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative pt-40 pb-24 bg-[#faf6ef] overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
-          <div className="font-display text-[20rem] font-light text-[#1e3d2f] leading-none select-none">
-            壽
-          </div>
+      <section className="relative pt-40 pb-24 bg-[#fafaf8] overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 flex items-center justify-end pr-16">
+          <Logo size={400} color="#00205b" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
           <div className="inline-flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-[#c8922a]" />
-            <span className="text-[#c8922a] text-xs font-medium uppercase tracking-[0.25em]">
+            <div className="h-px w-8 bg-[#c8a050]" />
+            <span className="text-[#c8a050] text-xs font-medium uppercase tracking-[0.25em]">
               About Us
             </span>
           </div>
-          <h1 className="font-display text-6xl md:text-7xl font-light text-[#1e3d2f] leading-tight max-w-3xl text-balance">
+          <h1 className="font-display text-6xl md:text-7xl font-light text-[#00205b] leading-tight max-w-3xl text-balance">
             More than a school.{" "}
             <em>A community.</em>
           </h1>
@@ -76,11 +75,11 @@ export default function AboutPage() {
 
       <main>
         {/* Story */}
-        <section className="section-padding bg-[#faf6ef]">
+        <section className="section-padding bg-[#fafaf8]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="font-display text-5xl font-light text-[#1e3d2f] mb-8 text-balance">
+                <h2 className="font-display text-5xl font-light text-[#00205b] mb-8 text-balance">
                   Rooted in Paradise Valley,{" "}
                   <em>grown over decades</em>
                 </h2>
@@ -98,17 +97,16 @@ export default function AboutPage() {
                     accessible to every child who wants it.
                   </p>
                   <p>
-                    Our logo — a symbol drawn from the Chinese Five Fortunes
-                    (Health, Wealth, Longevity, Love, and Virtue) — reflects our
-                    aspiration: to graduate students who flourish in every dimension
-                    of a good life.
+                    Our circular symbol reflects our aspiration: to nurture the
+                    interconnected growth of mind, body, and spirit — the whole
+                    child at the center of everything we do.
                   </p>
                 </div>
               </div>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-[#1e3d2f]/15">
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-[#00205b]/15">
                 <Image
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85"
-                  alt="Montessori Academy campus"
+                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=85"
+                  alt="Students working together on a hands-on project"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -119,17 +117,17 @@ export default function AboutPage() {
         </section>
 
         {/* Values */}
-        <section id="philosophy" className="section-padding bg-[#ede0cb]/30">
+        <section id="philosophy" className="section-padding bg-[#f4f6fa]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <div className="inline-flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-[#c8922a]" />
-                <span className="text-[#c8922a] text-xs font-medium uppercase tracking-[0.25em]">
+                <div className="h-px w-8 bg-[#c8a050]" />
+                <span className="text-[#c8a050] text-xs font-medium uppercase tracking-[0.25em]">
                   Our Values
                 </span>
-                <div className="h-px w-8 bg-[#c8922a]" />
+                <div className="h-px w-8 bg-[#c8a050]" />
               </div>
-              <h2 className="font-display text-5xl font-light text-[#1e3d2f] text-balance">
+              <h2 className="font-display text-5xl font-light text-[#00205b] text-balance">
                 What we believe
               </h2>
             </div>
@@ -139,7 +137,7 @@ export default function AboutPage() {
                   key={v.title}
                   className="bg-white rounded-2xl p-8 hover:shadow-md transition-shadow"
                 >
-                  <h3 className="font-display text-2xl font-semibold text-[#1e3d2f] mb-3">
+                  <h3 className="font-display text-2xl font-semibold text-[#00205b] mb-3">
                     {v.title}
                   </h3>
                   <p className="text-[#4a3f30] font-light leading-relaxed">
@@ -152,14 +150,14 @@ export default function AboutPage() {
         </section>
 
         {/* Faculty */}
-        <section id="faculty" className="section-padding bg-[#1e3d2f]">
+        <section id="faculty" className="section-padding bg-[#00205b]">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center">
             <div className="inline-flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-[#e8c87a]/60" />
-              <span className="text-[#e8c87a] text-xs font-medium uppercase tracking-[0.25em]">
+              <div className="h-px w-8 bg-[#e8c878]/60" />
+              <span className="text-[#e8c878] text-xs font-medium uppercase tracking-[0.25em]">
                 Our Team
               </span>
-              <div className="h-px w-8 bg-[#e8c87a]/60" />
+              <div className="h-px w-8 bg-[#e8c878]/60" />
             </div>
             <h2 className="font-display text-5xl font-light text-white mb-6 text-balance">
               Educators who truly know your child

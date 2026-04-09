@@ -55,8 +55,8 @@ export default function Mission() {
           <div className="relative">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-[#00205b]/20">
               <Image
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=85"
-                alt="Students engaged in hands-on learning"
+                src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=900&q=85"
+                alt="Child working with hands-on Montessori materials"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"

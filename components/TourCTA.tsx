@@ -7,8 +7,8 @@ export default function TourCTA() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
-          alt="Welcoming school environment"
+          src="https://images.unsplash.com/photo-1598616068517-c75ad88e3a5e?w=1920&q=80"
+          alt="Children discovering through hands-on Montessori work"
           fill
           className="object-cover object-center"
           sizes="100vw"
